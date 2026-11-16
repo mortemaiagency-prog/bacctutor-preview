@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <script>
+(function(){
+  try {
+    var r = sessionStorage.getItem("bacctutor-preview-redirect");
+    if (r) {
+      sessionStorage.removeItem("bacctutor-preview-redirect");
+      if ((location.pathname + location.search + location.hash) !== r) {
+        history.replaceState(null, "", r);
+      }
+    }
+  } catch (e) {}
+})();
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BaccTutor — The tutor that helps you work it out</title>
+    <meta name="description" content="Invite-only beta for MYP and GCSE Maths, ages 11–18, in the UK, Thailand and the US. More subjects later.">
+    <meta name="author" content="BaccTutor" />
+    <meta name="theme-color" content="#FCFAF8" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BaccTutor — The tutor that helps you work it out">
+    <meta property="og:description" content="Invite-only beta for MYP and GCSE Maths, ages 11–18, in the UK, Thailand and the US. More subjects later.">
+    <meta property="og:site_name" content="BaccTutor.ai" />
+    <meta property="og:image" content="https://bacctutor.ai/og-image.png">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BaccTutor — The tutor that helps you work it out">
+    <meta name="twitter:description" content="Invite-only beta for MYP and GCSE Maths, ages 11–18, in the UK, Thailand and the US. More subjects later.">
+    <meta name="twitter:image" content="https://bacctutor.ai/og-image.png">
+
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/bacctutor-preview/d9/assets/fraunces-latin-standard-normal-DihXLNYH.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/bacctutor-preview/d9/assets/plus-jakarta-sans-latin-wght-normal-eXO_dkmS.woff2">
+    <link rel="icon" type="image/svg+xml" href="/bacctutor-preview/d9/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/bacctutor-preview/d9/apple-touch-icon.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="BaccTutor — The tutor that helps you work it out">
+    <script type="module" crossorigin src="/bacctutor-preview/d9/assets/index-C_Cf5ZOF.js"></script>
+    <link rel="modulepreload" crossorigin href="/bacctutor-preview/d9/assets/vendor-DSKbrNeA.js">
+    <link rel="stylesheet" crossorigin href="/bacctutor-preview/d9/assets/index-BOV6aIpc.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <noscript>You need to enable JavaScript to use BaccTutor.ai.</noscript>
+  </body>
+</html>
