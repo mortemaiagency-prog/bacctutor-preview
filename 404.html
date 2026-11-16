@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting…</title>
+  <script>
+  (function () {
+    var m = location.pathname.match(/\/bacctutor-preview\/(d1|d2|d3|d7)(\/.*)?$/);
+    if (m) {
+      try { sessionStorage.setItem("bacctutor-preview-redirect", location.pathname + location.search + location.hash); } catch (e) {}
+      location.replace("/bacctutor-preview/" + m[1] + "/");
+    }
+  })();
+  </script>
+</head>
+<body>
+  <p>This preview path was not found. <a href="/bacctutor-preview/">Back to the list</a>.</p>
+</body>
+</html>

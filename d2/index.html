@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <script>
+(function(){
+  try {
+    var r = sessionStorage.getItem("bacctutor-preview-redirect");
+    if (r) {
+      sessionStorage.removeItem("bacctutor-preview-redirect");
+      if ((location.pathname + location.search + location.hash) !== r) {
+        history.replaceState(null, "", r);
+      }
+    }
+  } catch (e) {}
+})();
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BaccTutor | MYP &amp; GCSE Maths, step by step</title>
+    <meta name="description" content="Calm, step-by-step maths support for students aged 11–18. Practise MYP and GCSE Maths in our free, invite-only beta for families in the UK, Thailand and the US.">
+    <meta name="author" content="BaccTutor" />
+    <meta name="theme-color" content="#fcfbf8" />
+    <link rel="icon" type="image/svg+xml" href="/bacctutor-preview/d2/favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BaccTutor | MYP &amp; GCSE Maths, step by step">
+    <meta property="og:description" content="Calm, step-by-step maths support for students aged 11–18. Practise MYP and GCSE Maths in our free, invite-only beta for families in the UK, Thailand and the US.">
+    <meta property="og:site_name" content="BaccTutor.ai" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="BaccTutor | MYP &amp; GCSE Maths, step by step">
+    <meta name="twitter:description" content="Calm, step-by-step maths support for students aged 11–18. Practise MYP and GCSE Maths in our free, invite-only beta for families in the UK, Thailand and the US.">
+
+    <script type="module" crossorigin src="/bacctutor-preview/d2/assets/index-B1GzzZxI.js"></script>
+    <link rel="modulepreload" crossorigin href="/bacctutor-preview/d2/assets/vendor-Cz3KGjpt.js">
+    <link rel="modulepreload" crossorigin href="/bacctutor-preview/d2/assets/supabase-CXidNrjy.js">
+    <link rel="modulepreload" crossorigin href="/bacctutor-preview/d2/assets/ui-BcArcLMG.js">
+    <link rel="stylesheet" crossorigin href="/bacctutor-preview/d2/assets/index-CWUDqyg_.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <noscript>You need to enable JavaScript to use BaccTutor.ai.</noscript>
+  </body>
+</html>
