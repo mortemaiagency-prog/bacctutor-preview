@@ -5,7 +5,7 @@
   <title>Redirecting…</title>
   <script>
   (function () {
-    var m = location.pathname.match(/\/bacctutor-preview\/(d1|d2|d3|d7|d8|d9)(\/.*)?$/);
+    var m = location.pathname.match(/\/bacctutor-preview\/(d1|d2|d3|d7|d8|d9|d10)(\/.*)?$/);
     if (m) {
       try { sessionStorage.setItem("bacctutor-preview-redirect", location.pathname + location.search + location.hash); } catch (e) {}
       location.replace("/bacctutor-preview/" + m[1] + "/");
